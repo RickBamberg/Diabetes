@@ -1,0 +1,25 @@
+
+
+
+
+
+
+Este README é diferente do README do notebook. Ele deve explicar:
+
+O que a aplicação faz: Descreva brevemente os dois modos (predição única e em lote).
+
+Como configurar e executar:
+
+Clonar o repositório (git clone ...).
+Criar e ativar um ambiente virtual (python -m venv venv, source venv/bin/activate ou venv\Scripts\activate).
+Instalar as dependências (pip install -r requirements.txt).
+Como executar a aplicação (python app.py).
+Informar o endereço local onde a aplicação estará rodando (ex: http://127.0.0.1:5000).
+
+Como usar:
+
+Instruções para a interface web (preencher campos, clicar botão).
+Instruções para o upload em lote (formato esperado do CSV, quais colunas, exemplo).
+Tecnologias Usadas: Liste as principais bibliotecas (Flask, Scikit-learn, Pandas, etc.).
+(Opcional) Link para o Notebook: Se o notebook de análise/treinamento também estiver no repositório (ou em outro), coloque um link para ele.
+(Opcional) Screenshots: Imagens da interface web podem ser muito úteis.
