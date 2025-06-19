@@ -1,0 +1,434 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:app:Locating template 'index.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\index.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 10:56:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 10:56:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 10:56:41] "GET /test_model HTTP/1.1" 200 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 7.0, 'Glicose': 130.0, 'Pressão arterial': 88.0, 'Espessura da pele': 35.0, 'Insulina': 0.0, 'IMC': 33.1, 'Diabetes Descendente': 1.0, 'Idade': 44.0}
+DEBUG:app:Dados após pré-processamento: [[-0.23968566  0.375       0.11827957  0.28497518  0.97680475  7.
+  44.          1.        ]]
+INFO:app:Locating template 'results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 10:57:56] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 10:57:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: 'probabilidade' is undefined
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 40, in top-level template code
+    {% if probabilidade > 80 %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'probabilidade' is undefined
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:26:47] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: 'result' is undefined
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 40, in top-level template code
+    {% if result['Probabilidade'] > 80 %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 471, in getitem
+    return obj[argument]
+           ~~~^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'result' is undefined
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:27:46] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: expected token ':', got '}'
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 40, in template
+    {% if {{ result['Probabilidade'] }} > 80 %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:28:16] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: expected token ':', got '}'
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 40, in template
+    {% if {{ result['Probabilidade'] }} > 80 %}:
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:29:45] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: expected token ':', got '}'
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 55, in template
+    {% if {{ result['Probabilidade'] }} > 80 %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:32:11] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: expected token ':', got '}'
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 55, in template
+    {% if {{ result['Probabilidade'] }} > 80 %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token ':', got '}'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:33:46] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+ERROR:app:Erro no test_model: '>' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\Jorge Maques\Documents\Diabetes\app.py", line 162, in test_model
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "C:\Users\Jorge Maques\Documents\Diabetes\venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\Jorge Maques\Documents\Diabetes\templates\test_results.html", line 55, in top-level template code
+    {% if result['Probabilidade'] > 80 %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'int'
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:34:54] "[35m[1mGET /test_model HTTP/1.1[0m" 500 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:39:00] "GET /test_model HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:werkzeug: * Detected change in 'C:\\Users\\Jorge Maques\\Documents\\Diabetes\\app.py', reloading
+INFO:app:Sistema de logging inicializado
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 219-193-798
+INFO:app:Locating template 'index.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\index.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:43:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:43:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:43:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:43:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 8.0, 'Glicose': 181.0, 'Pressão arterial': 68.0, 'Espessura da pele': 36.0, 'Insulina': 495.0, 'IMC': 30.1, 'Diabetes Descendente': 1.0, 'Idade': 53.0}
+DEBUG:app:Dados após pré-processamento: [[ 3.6502947   0.40625    -0.20430108  1.88112959 -0.05715025  8.
+  53.          1.        ]]
+INFO:app:Predição realizada - Resultado: 1, Probabilidade: 90.83%
+INFO:app:Locating template 'results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:44:40] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:44:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:46:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:46:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 7.0, 'Glicose': 130.0, 'Pressão arterial': 88.0, 'Espessura da pele': 35.0, 'Insulina': 0.0, 'IMC': 33.1, 'Diabetes Descendente': 1.0, 'Idade': 44.0}
+DEBUG:app:Dados após pré-processamento: [[-0.23968566  0.375       0.11827957  0.28497518  0.97680475  7.
+  44.          1.        ]]
+INFO:app:Predição realizada - Resultado: 1, Probabilidade: 78.29%
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:47:21] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:47:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:50:44] "GET /test_model HTTP/1.1" 200 -
+INFO:app:Locating template 'test_results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\test_results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 11:58:58] "GET /test_model HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:00:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:00:13] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:00:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:00:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 2.0, 'Glicose': 90.0, 'Pressão arterial': 70.0, 'Espessura da pele': 25.0, 'Insulina': 80.0, 'IMC': 24.0, 'Diabetes Descendente': 0.0, 'Idade': 28.0}
+DEBUG:app:Dados após pré-processamento: [[ 0.38899804  0.0625     -0.86021505 -0.96691063  0.04624525  2.
+  28.          0.        ]]
+INFO:app:Predição realizada - Resultado: 0, Probabilidade: 3.65%
+INFO:app:Locating template 'results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:01:56] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:01:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:02:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:02:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 4.0, 'Glicose': 115.0, 'Pressão arterial': 72.0, 'Espessura da pele': 35.0, 'Insulina': 150.0, 'IMC': 29.5, 'Diabetes Descendente': 0.0, 'Idade': 35.0}
+DEBUG:app:Dados após pré-processamento: [[ 0.93909627  0.375      -0.2688172  -0.184482    0.14964075  4.
+  35.          0.        ]]
+INFO:app:Predição realizada - Resultado: 0, Probabilidade: 33.64%
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:03:49] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:03:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:05:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:05:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 3.0, 'Glicose': 125.0, 'Pressão arterial': 80.0, 'Espessura da pele': 30.0, 'Insulina': 0.0, 'IMC': 32.0, 'Diabetes Descendente': 1.0, 'Idade': 42.0}
+DEBUG:app:Dados após pré-processamento: [[-0.23968566  0.21875     0.          0.12848945  0.56322275  3.
+  42.          1.        ]]
+INFO:app:Predição realizada - Resultado: 1, Probabilidade: 73.36%
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:05:49] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:05:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:06:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:06:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 6.0, 'Glicose': 148.0, 'Pressão arterial': 72.0, 'Espessura da pele': 35.0, 'Insulina': 0.0, 'IMC': 33.6, 'Diabetes Descendente': 1.0, 'Idade': 50.0}
+DEBUG:app:Dados após pré-processamento: [[-0.23968566  0.375       0.17204301  0.84832379  0.14964075  6.
+  50.          1.        ]]
+INFO:app:Predição realizada - Resultado: 1, Probabilidade: 81.61%
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:07:21] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:07:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:19:40] "GET /test_model HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:21:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:21:58] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:22:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:22:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:app:Iniciando processamento de formulário
+DEBUG:app:Dados recebidos: {'Gravidez': 2.0, 'Glicose': 110.0, 'Pressão arterial': 78.0, 'Espessura da pele': 28.0, 'Insulina': 0.0, 'IMC': 27.8, 'Diabetes Descendente': 0.0, 'Idade': 39.0}
+DEBUG:app:Dados após pré-processamento: [[-0.23968566  0.15625    -0.4516129  -0.34096773  0.45982725  2.
+  39.          0.        ]]
+INFO:app:Predição realizada - Resultado: 0, Probabilidade: 24.03%
+INFO:app:Locating template 'results.html':
+    1: trying loader of application 'app'
+       class: jinja2.loaders.FileSystemLoader
+       encoding: 'utf-8'
+       followlinks: False
+       searchpath:
+         - C:\Users\Jorge Maques\Documents\Diabetes\templates
+       -> found ('C:\\Users\\Jorge Maques\\Documents\\Diabetes\\templates\\results.html')
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:22:46] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2025 12:22:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
