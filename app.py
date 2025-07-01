@@ -113,7 +113,7 @@ def index():
 @app.route('/test_model')
 def test_model():
     try:
-        test_df = pd.read_csv('data/test_cases.csv')
+        test_df = pd.read_csv('date/test_cases.csv')
         # Garante nomes consistentes
         test_df = test_df.rename(columns={
             'Pressao_arterial': 'Pressão arterial',

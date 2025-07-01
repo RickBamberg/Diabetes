@@ -15,10 +15,3 @@
 2025-04-24 07:38:40 - 127.0.0.1 - - [24/Apr/2025 07:38:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-04-24 07:38:40 - 127.0.0.1 - - [24/Apr/2025 07:38:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2025-04-24 07:39:03 - 127.0.0.1 - - [24/Apr/2025 07:39:03] "GET /test_model HTTP/1.1" 200 -
-2025-04-24 12:18:49 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-04-24 12:18:49 - [33mPress CTRL+C to quit[0m
-2025-04-24 12:19:15 - 127.0.0.1 - - [24/Apr/2025 12:19:15] "GET /test_model HTTP/1.1" 200 -
-2025-04-26 10:07:37 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2025-04-26 10:07:37 - [33mPress CTRL+C to quit[0m
