@@ -26,20 +26,19 @@ Diabetes/
 ├── data/  
 │   ├── diabetes.csv  # Base de dados usada para treino  
 │   └── test_cases.csv  # Lista de dadis para treino  
-├── templates/
-│   ├── index.html  # Página inicial com formulário
-│   ├── results.html  # Página com resultado da predição
-│   └── test_results.html  # Página com resultados de testes automatizados
-├── static/
-│   └── style.css  # Estilos CSS para a aplicação web
-├── util/
-│   └── logging_config.py  # Configuração de logging customizado
-├── requirements.txt   # Dependências do projeto
-├── README.md  # Documentação do projeto (este arquivo)
-
-└── logs/
-    ├── app.log  # Arquivo de log do Aplicativo
-    └── access.log  # Arquivo de log do Sistema
+├── templates/  
+│   ├── index.html  # Página inicial com formulário  
+│   ├── results.html  # Página com resultado da predição  
+│   └── test_results.html  # Página com resultados de testes automatizados  
+├── static/  
+│   └── style.css  # Estilos CSS para a aplicação web  
+├── util/  
+│   └── logging_config.py  # Configuração de logging customizado  
+├── requirements.txt   # Dependências do projeto  
+├── README.md  # Documentação do projeto (este arquivo)  
+└── logs/  
+    ├── app.log  # Arquivo de log do Aplicativo  
+    └── access.log  # Arquivo de log do Sistema  
 
 ---
 
