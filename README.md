@@ -17,15 +17,15 @@ A aplicação Flask carrega o modelo e o pré-processador, valida as entradas do
 ## Estrutura do Projeto
 
 Diabetes/
-├── app.py  # Aplicação Flask
-├── salva_modelo.py  # Script para treinar e salvar o modelo e pré-processador
-├── gerar_executavel.bat  # Gera programa executável
-├── model/
-│   ├── model.pkl  # Modelo treinado serializado
-│   └── preprocessor.pkl  # Pré-processador serializado
-├── data/
-│   ├── diabetes.csv  # Base de dados usada para treino
-│   └── test_cases.csv  # Lista de dadis para treino
+├── app.py  # Aplicação Flask  
+├── salva_modelo.py  # Script para treinar e salvar o modelo e pré-processador  
+├── gerar_executavel.bat  # Gera programa executável  
+├── model/  
+│   ├── model.pkl  # Modelo treinado serializado  
+│   └── preprocessor.pkl  # Pré-processador serializado  
+├── data/  
+│   ├── diabetes.csv  # Base de dados usada para treino  
+│   └── test_cases.csv  # Lista de dadis para treino  
 ├── templates/
 │   ├── index.html  # Página inicial com formulário
 │   ├── results.html  # Página com resultado da predição
